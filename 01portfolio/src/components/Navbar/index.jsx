@@ -77,6 +77,40 @@ transition: all 0.2s ease-in-out
 color: ${({ theme }) => theme.primary}}
 `;
 
+const ButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 80%;
+  height: 100%;
+  padding: 0 6px @media screen and (max-width: 640px) {
+    display: none;
+  }
+`;
+
+const GithubButton = styled.button`
+  border: 1.8px solid ${({ theme }) => theme.primary};
+  border-radius: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  height: 70%;
+  :hover{
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.text_light}
+  }
+
+  @media screen and (min-width: 640px){
+  font-size: 0.8rem;
+  
+  }
+
+`;
+
 const Navbar = () => {
   return (
     <Nav>

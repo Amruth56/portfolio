@@ -1,5 +1,6 @@
 import "./App.css";
 import styled, { ThemeProvider } from "styled-components";
+import { BrowserRouter as Router } from 'react-router-dom';
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
@@ -30,14 +31,16 @@ function App() {
   return (
     <>
       <ThemeProvider theme={darkTheme}>
-        <Navbar></Navbar>
-        <Body>
-          <Hero></Hero>
-          <Wrapper>
-            <Skills></Skills>
-            <Education></Education>
-          </Wrapper>
-        </Body>
+        <Router>
+          <Navbar></Navbar>
+          <Body>
+            <Hero></Hero>
+            <Wrapper>
+              <Skills></Skills>
+              <Education></Education>
+            </Wrapper>
+          </Body>
+        </Router>
       </ThemeProvider>
     </>
   );
