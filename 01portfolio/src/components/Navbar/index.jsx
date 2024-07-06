@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 import { Link as LinkR } from "styled-components";
 
 const Nav = styled.div`
@@ -41,6 +40,19 @@ const NavLogo = styled(LinkR)`
   }
 `;
 
+const NavItems = styled.ul`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  line-style: none;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 768px) {
@@ -53,6 +65,16 @@ const MobileIcon = styled.div`
     cursor: pointer:
     color: ${({ theme }) => theme.text_primary}
   }
+`;
+
+const NavLink = styled.a`
+color: ${({ theme }) => theme.text_primary}
+font-weight: 500;
+cursor: pointer;
+text-decoration: none;
+transition: all 0.2s ease-in-out
+&:hover {
+color: ${({ theme }) => theme.primary}}
 `;
 
 const Navbar = () => {
@@ -73,6 +95,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
 
 // 18.48
