@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { NAVIGATION_LINKS } from "../constants";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -33,9 +34,29 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-          <ul className='flex items-center gap-4'>
-            {NAVIGATION}
+          <ul className="flex items-center gap-4">
+            {NAVIGATION_LINKS.map((item, index) => {
+              <li key={index}>
+                <a
+                  className="text-sm hover:tet"
+                  href={item.href}
+                  onClick={(e) => handleLinkClick(e, item.href)}
+                >
+                  {item.label}
+                </a>
+              </li>;
+            })}
           </ul>
+        </div>
+        {/* Mobile Menu */}
+        <div className="rounded-lg backdrop-blur-md lg:hidden">
+          <div className="flex item-center justify-between">
+            <div>
+              <a href="#">
+                <img src = {logo} width={90} alt ='logo'></img>
+              </a>
+            </div>
+          </div>
         </div>
       </nav>
     </div>
