@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -28,10 +29,13 @@ const Navbar = () => {
           <div className="flex justify-between gap-6">
             <div>
               <a href="#">
-                <img src = {logo} width={90} alt='logo'></img>
+                <img src={logo} width={90} alt="logo"></img>
               </a>
             </div>
           </div>
+          <ul className='flex items-center gap-4'>
+            {NAVIGATION}
+          </ul>
         </div>
       </nav>
     </div>
