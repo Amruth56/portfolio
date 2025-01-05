@@ -1,0 +1,14 @@
+*{
+    background: #000;
+    box-sizing: border-box; margin: 0; padding: 0;
+}
+
+.h-50vh{
+    height: 50vh;
+}
+
+.font-style-pos{
+    font-size:56;
+    color: #ccf381;
+    font-family: cursive;
+}

@@ -1,4 +1,6 @@
-<div class="d-flex justify-content-end gap-3 bg-black">
+<div class="d-flex justify-content-between gap-3 bg-dark border-bottom border-3">
+    <p class="fs-14 fw-bold hover-pointer m-3 text-warning" (click)="selected('home')">🏠HOME</p>
+   
     <ul class="d-flex gap-4 text-white m-3 list-unstyled">
         <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Internships')">Internships</li>
         <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Projects')">Projects</li>
@@ -8,6 +10,10 @@
     </ul>
 </div>
 
+<!-- <ng-container *ngIf="activeIndex === 'home'">
+    <app-home></app-home>
+</ng-container> -->
+<app-home></app-home>
 <ng-container *ngIf="activeIndex === 'Internships'">
     <app-internships></app-internships>
 </ng-container>
