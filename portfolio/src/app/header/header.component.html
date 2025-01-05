@@ -1,0 +1,25 @@
+<div class="d-flex justify-content-end gap-3 bg-black">
+    <ul class="d-flex gap-4 text-white m-3 list-unstyled">
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Internships')">Internships</li>
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Projects')">Projects</li>
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Achievements')">Achievements</li>
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Skills')">Skills</li>
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('Contact')">Contact</li>
+    </ul>
+</div>
+
+<ng-container *ngIf="activeIndex === 'Internships'">
+    <app-internships></app-internships>
+</ng-container>
+<ng-container *ngIf="activeIndex === 'Projects'">
+    <app-projects></app-projects>
+</ng-container>
+<ng-container *ngIf="activeIndex === 'Achievements'">
+    <app-acheivements></app-acheivements>
+</ng-container>
+<ng-container *ngIf="activeIndex === 'Skills'">
+    <app-skills></app-skills>
+</ng-container>
+<ng-container *ngIf="activeIndex === 'Contact'">
+    <app-contact-me></app-contact-me>
+</ng-container>
