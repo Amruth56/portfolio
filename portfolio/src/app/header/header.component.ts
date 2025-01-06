@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { SkillsComponent } from '../skills/skills.component';
 import { InternshipsComponent } from '../internships/internships.component';
 import { ProjectsComponent } from '../projects/projects.component';
@@ -12,8 +12,9 @@ import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
   selector: 'app-header',
-  standalone:true,
-  imports: [CommonModule, 
+  standalone: true,
+  imports: [
+    CommonModule, 
     SkillsComponent, 
     InternshipsComponent, 
     ProjectsComponent, 
@@ -21,22 +22,53 @@ import { TooltipModule } from 'primeng/tooltip';
     ContactMeComponent, 
     HomeComponent,
     ButtonModule,
-     DialogModule,
-     TooltipModule],
+    DialogModule,
+    TooltipModule
+  ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  @ViewChild('home') home!: ElementRef;
+  @ViewChild('internship') internship!: ElementRef;
+  @ViewChild('project') project!: ElementRef;
+  @ViewChild('achievement') achievement!: ElementRef;
+  @ViewChild('skill') skill!: ElementRef;
 
-ngOnInit(): void {
+  activeIndex = "home";
 
+  constructor() {}
+
+  ngOnInit(): void {}
+
+  ngAfterViewInit(): void {
+    // Initial scroll to home section if needed
+    setTimeout(() => {
+      this.scrollToSection(this.activeIndex);
+    });
+  }
+
+  selected(section: string) {
+    this.activeIndex = section;
+    this.scrollToSection(section);
+  }
+
+  scrollToSection(section: string) {
+    const sectionMap: { [key: string]: ElementRef } = {
+      home: this.home,
+      internship: this.internship,
+      project: this.project,
+      achievement: this.achievement,
+      skill: this.skill
+    };
+
+    const element = sectionMap[section];
+    if (element && element.nativeElement) {
+      element.nativeElement.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }
+  }
 }
 
-activeIndex = ""
-
-selected(event:string){
-  console.log(event)
-  this.activeIndex = event
-}
-
-}

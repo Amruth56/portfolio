@@ -1,0 +1,15 @@
+/* In your header.component.css */
+:host {
+    display: block;
+  }
+  
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  div[id] {
+    scroll-margin-top: 80px; /* Adjust this value based on your header height */
+    min-height: 100vh;
+  }
