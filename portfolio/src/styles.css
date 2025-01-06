@@ -8,6 +8,15 @@
     color: #ccf381;
 }
 
+.h-100vh{
+  height: 100vh;
+}
+
+.w-3vw{
+  width:3vw
+}
+
+
 html {
     scroll-behavior: smooth;
   }

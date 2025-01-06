@@ -4,23 +4,23 @@
     <ul class="d-flex gap-4 text-white m-3 list-unstyled">
         <li class="fs-14 fw-semibold hover-pointer" (click)="selected('internship')">Internships</li>
         <li class="fs-14 fw-semibold hover-pointer" (click)="selected('project')">Projects</li>
-        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('achievement')">Achievements</li>
         <li class="fs-14 fw-semibold hover-pointer" (click)="selected('skill')">Skills</li>
+        <li class="fs-14 fw-semibold hover-pointer" (click)="selected('achievement')">Achievements</li>
     </ul>
 </header>
 
-<div #home id="home">
+<div #home id="home" class="">
     <app-home></app-home>
 </div>
-<div #internship id="internship">
+<div #internship id="internship" class="">
     <app-internships></app-internships>
 </div>
-<div #project id="project">
+<div #project id="project" class="">
     <app-projects></app-projects>
 </div>
-<div #achievement id="achievement">
-    <app-acheivements></app-acheivements>
-</div>
-<div #skill id="skill">
+<div #skill id="skill" class="">
     <app-skills></app-skills>
+</div>
+<div #achievement id="achievement" class="">
+    <app-acheivements></app-acheivements>
 </div>
