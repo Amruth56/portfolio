@@ -2,3 +2,8 @@
 .hover-pointer{
     cursor: pointer;
 }
+
+.ff-cursive{
+    font-family:cursive;
+    color: #ccf381;
+}
