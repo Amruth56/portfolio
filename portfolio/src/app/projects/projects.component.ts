@@ -33,7 +33,7 @@ export class ProjectsComponent {
       title: "Personal Portfolio",
       link: 'LINK',
       techUsed:'Angular, Bootstrap, PrimeNg, ApexCharts',
-      details: [ 'Developed a responsive and interactive personal portfolio website using Angular and Bootstrap, showcasing projects and skills.', 'Utilized PrimeNg components for enhanced user experience and streamlined UI development, ensuring consistent and modern design.', 'Integrated ApexCharts to create dynamic and interactive data visualizations, demonstrating technical expertise and project achievements.', 'Implemented a blog section to share technical articles and tutorials, resulting in increased engagement and showcasing thought leadership.', 'Optimized the website for performance and SEO, leading to improved search engine rankings and faster load times.' ],
+      details: [ 'Developed a responsive and interactive personal portfolio website using Angular and Bootstrap, showcasing projects and skills.', 'Utilized PrimeNg components for enhanced user experience and streamlined UI development, ensuring consistent and modern design.', 'Integrated ApexCharts to create dynamic and interactive data visualizations, demonstrating technical expertise and project achievements.'],
     }
   ];
 }
