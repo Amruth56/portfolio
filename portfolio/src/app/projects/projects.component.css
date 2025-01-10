@@ -1,3 +1,22 @@
-*{
-    background: #000;
-}
+.projects-container {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 auto;
+    max-width: 300px; /* Adjust the width of the project cards as needed */
+  }
+  
+  .card {
+    min-width: 300px; /* Adjust the width of the project cards as needed */
+  }
+  
