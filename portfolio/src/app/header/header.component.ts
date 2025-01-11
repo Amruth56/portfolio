@@ -3,7 +3,6 @@ import { SkillsComponent } from '../skills/skills.component';
 import { InternshipsComponent } from '../internships/internships.component';
 import { ProjectsComponent } from '../projects/projects.component';
 import { AcheivementsComponent } from "../acheivements/acheivements.component";
-import { ContactMeComponent } from "../contact-me/contact-me.component";
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from '../home/home.component';
 import { ButtonModule } from 'primeng/button'; 
@@ -19,7 +18,7 @@ import { TooltipModule } from 'primeng/tooltip';
     InternshipsComponent, 
     ProjectsComponent, 
     AcheivementsComponent, 
-    ContactMeComponent, 
+    
     HomeComponent,
     ButtonModule,
     DialogModule,
