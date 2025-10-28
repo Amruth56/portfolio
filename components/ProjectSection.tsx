@@ -70,7 +70,7 @@ export default function ProjectsSection() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 </div>
-                <CardContent>
+                <CardContent className="bg-[#161b22]">
                   <Typography
                     variant="h6"
                     className="font-semibold mb-2 text-white group-hover:text-indigo-400 transition-colors"

@@ -2,6 +2,7 @@ import { AboutComponent } from "@/components/AboutComponent";
 import { EducationSection } from "@/components/EducationSection";
 import { HeaderComponent } from "@/components/HeaderComponent";
 import ProjectsSection from "@/components/ProjectSection";
+import ExperienceSection from "@/components/ExperienceSection";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutComponent/>
       <EducationSection/>
       <ProjectsSection/>
+      <ExperienceSection/>
 
     </div>
   );

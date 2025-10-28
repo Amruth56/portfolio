@@ -36,7 +36,7 @@ export function EducationSection() {
               {/* Glowing Dot */}
               <span className="absolute -left-3 flex items-center justify-center w-6 h-6 rounded-full bg-sky-400/80 shadow-[0_0_15px_#38bdf8]"></span>
 
-              <div className="bg-white/10 backdrop-blur-md border border-white/10 rounded-xl p-6 shadow-md hover:shadow-[0_0_20px_#38bdf8] transition-all duration-300 ease-in-out">
+              <div className=" backdrop-blur-md rounded-xl p-6 shadow-md hover:shadow-[0_0_20px_#38bdf8] transition-all duration-300 ease-in-out">
                 <h3 className="text-xl md:text-2xl font-semibold text-white mb-1">
                   {edu.level}
                 </h3>
