@@ -9,31 +9,31 @@ import Link from "next/link";
 const socials = [
   {
     name: "LinkedIn",
-    icon: <Linkedin className="w-6 h-6 text-sky-400 group-hover:text-white transition-colors" />,
+    icon: <Linkedin className="w-6 h-6 text-white hover:text-sky-400 group-hover:text-white transition-colors" />,
     href: "https://www.linkedin.com/in/amruth-mandappa-t-s-48838a203",
     color: "bg-[#0077b5]",
   },
   {
     name: "GitHub",
-    icon: <Github className="w-6 h-6 text-sky-400 group-hover:text-white transition-colors" />,
+    icon: <Github className="w-6 h-6 text-white hover:text-sky-400 group-hover:text-white transition-colors" />,
     href: "https://github.com/Amruth56",
     color: "bg-[#171515]",
   },
   {
     name: "Email",
-    icon: <Mail className="w-6 h-6 text-sky-400 group-hover:text-white transition-colors" />,
+    icon: <Mail className="w-6 h-6 text-white hover:text-sky-400 group-hover:text-white transition-colors" />,
     href: "mailto:amruth.coder56@gmail.com",
     color: "bg-[#1e293b]",
   },
   {
     name: "Twitter / X",
-    icon: <Twitter className="w-6 h-6 text-sky-400 group-hover:text-white transition-colors" />,
+    icon: <Twitter className="w-6 h-6 text-white hover:text-sky-400 group-hover:text-white transition-colors" />,
     href: "https://x.com/Amruth_Mandappa",
     color: "bg-[#0f172a]",
   },
   {
     name: "Instagram",
-    icon: <Instagram className="w-6 h-6 text-sky-400 group-hover:text-white transition-colors" />,
+    icon: <Instagram className="w-6 h-6 text-white hover:text-sky-400 group-hover:text-white transition-colors" />,
     href: "https://instagram.com/gusto_muffin",
     color: "bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#FCAF45]",
   },
@@ -65,8 +65,8 @@ export default function ContactSection() {
 
               <Card className="relative rounded-2xl border border-white/10 bg-[#161b22]/80 backdrop-blur-md transition-all duration-500 hover:shadow-[0_0_25px_rgba(56,189,248,0.4)]">
                 <CardContent className=" bg-[#0d1117] flex flex-col items-center justify-center p-6 space-y-3">
-                  <div className="flex items-center justify-center">{item.icon}</div>
-                  <p className="text-gray-300 font-medium group-hover:text-white">{item.name}</p>
+                  <div className="flex items-center justify-center ">{item.icon}</div>
+                  <p className="text-white font-medium group-hover:text-sky-400">{item.name}</p>
                 </CardContent>
               </Card>
             </Link>

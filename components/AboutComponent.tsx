@@ -20,7 +20,7 @@ export function AboutComponent() {
             I’ve interned at <span className="font-medium text-sky-400">Healthifyme</span>,
             <span className="font-medium text-sky-400"> Skysecure Technologies</span>, and
             <span className="font-medium text-sky-400"> ProQsmart</span>, where I contributed to full-stack
-            applications using React.js, Next.js, Tailwind CSS, Node.js, and TypeScript.
+            applications using HTML, CSS, JavaScript, TypeScript, AngularJS, React.js, Next.js, Tailwind CSS, Node.js, and AWS.
             My work includes upgrading design systems, enhancing performance, and debugging production issues with tools like Sentry.
           </p>
 

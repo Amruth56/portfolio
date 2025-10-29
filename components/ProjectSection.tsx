@@ -7,37 +7,37 @@ const projects = [
     title: "Personal Portfolio",
     description: "A responsive portfolio website built with Next.js, MUI, and Tailwind.",
     image: "portfolio.png ",
-    link: "#",
+    link: "https://github.com/Amruth56/portfolio",
   },
   {
     title: "QR Code Scanner",
     description: "A mobile 1st web app that scans and generates QR codes instantly.",
     image: "QR_scanner.png",
-    link: "#",
+    link: "https://github.com/Amruth56/QR-scanner",
   },
   {
     title: "PR Script",
     description: "Writes the description for github pull request from the commit messages.",
     image: "https://picsum.photos/400/250?random=3",
-    link: "#",
+    link: "https://github.com/Amruth56/prScript",
   },
   {
     title: "Picture in Picture Extension",
     description: "A Chrome extension for watching videos in floating mini windows.",
     image: "https://picsum.photos/400/250?random=4",
-    link: "#",
+    link: "https://github.com/Amruth56/picture-in-picture",
   },
   {
     title: "Chess Game",
     description: "An interactive chess game built with React and JavaScript logic.",
     image: "Chess.png",
-    link: "#",
+    link: "https://github.com/Amruth56?tab=repositories&q=chess&type=&language=&sort=",
   },
   {
     title: "WeMeet – Let's Connect",
     description: "A real-time video chat app powered by WebRTC and Socket.io.",
     image: "https://picsum.photos/400/250?random=6",
-    link: "#",
+    link: "https://github.com/Amruth56/We_meet",
   },
 ];
 
