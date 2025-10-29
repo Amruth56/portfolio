@@ -3,11 +3,12 @@
 export function EducationSection() {
   const education = [
     {
-      level: "Class 1 to 10",
-      institution: "Jnanagange Residential School (CBSE)",
-      details: "CGPA: 9.8",
-      year: "2017",
-    },
+        level: "B.Tech in Computer Science and Engineering",
+        institution:
+          "Indian Institute of Information Technology Dharwad (IIIT Dharwad)",
+        details: "CGPA: 8.18",
+        year: "2024",
+      },
     {
       level: "Pre-University (+1 and +2)",
       institution: "Ambika PU College, Puttur (PCMB)",
@@ -15,12 +16,12 @@ export function EducationSection() {
       year: "2019",
     },
     {
-      level: "B.Tech in Computer Science and Engineering",
-      institution:
-        "Indian Institute of Information Technology Dharwad (IIIT Dharwad)",
-      details: "CGPA: 8.18",
-      year: "2024",
-    },
+        level: "Class 1 to 10",
+        institution: "Jnanagange Residential School (CBSE)",
+        details: "CGPA: 9.8",
+        year: "2017",
+      },
+ 
   ];
 
   return (

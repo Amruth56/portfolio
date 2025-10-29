@@ -47,8 +47,8 @@ export default function ExperienceSection() {
   return (
     <section id="work" className="py-20 bg-gradient-to-b from-[#0a0a0f] to-[#111827] text-white">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-extrabold text-center mb-12">
-          <span className="text-indigo-500">Work</span> Experience
+        <h2 className="text-4xl font-bold text-center mb-4">
+          <span className="text-sky-400">Work</span> Experience
         </h2>
 
         <div className="space-y-8">
