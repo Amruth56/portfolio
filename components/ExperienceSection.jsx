@@ -54,9 +54,12 @@ export default function ExperienceSection() {
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <Card
-              key={index}
-              className=" backdrop-blur-lg border border-white/10 rounded-2xl shadow-md  hover:shadow-[0_0_20px_#38bdf8] ease-in-out hover:border-indigo-500/40 transform hover:-translate-y-1 transition-all duration-300 "
-            >
+            key={index}
+            className="relative overflow-hidden backdrop-blur-lg border border-white/10 rounded-2xl shadow-md hover:border-sky-500/60 transition-all duration-300 ease-in-out group"
+          >
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 blur-2xl bg-sky-500/10"></div>
+            </div>
               <CardContent className="p-6 bg-[#161b22]">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                   <Typography variant="h6" className="font-semibold text-white flex items-center gap-2">
@@ -67,13 +70,14 @@ export default function ExperienceSection() {
                   </Typography>
                 </div>
 
+<div className="flex justify-between items-center mb-2">
                 <Typography variant="subtitle1" className="text-sky-400 font-medium mb-1">
                   {exp.role}
                 </Typography>
 
-                <Typography variant="body2" className="text-gray-300 mb-4">
-                  <span className="font-semibold text-gray-200">Tech Stack:</span> {exp.tech}
-                </Typography>
+                <p className="text-gray-300 italic text-xs"> {exp.tech}
+                </p>
+                </div>
 
                 <ul className="list-disc list-inside text-gray-200 space-y-2">
                   {exp.points.map((point, i) => (
